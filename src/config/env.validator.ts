@@ -1,5 +1,5 @@
 import { plainToClass } from 'class-transformer';
-import { IsNumber, IsString, validateSync } from 'class-validator';
+import { IsBoolean, IsNumber, IsString, validateSync } from 'class-validator';
 
 class EnvironmentVariables {
   @IsNumber()
@@ -7,6 +7,9 @@ class EnvironmentVariables {
 
   @IsString()
   APP_PREFIX: string;
+
+  @IsBoolean()
+  ENABLE_DOCUMENTATION: boolean;
 
   @IsString()
   TYPEORM_CONNECTION: string;
