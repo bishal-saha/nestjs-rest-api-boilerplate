@@ -6,9 +6,6 @@ class EnvironmentVariables {
   APP_PORT: number;
 
   @IsString()
-  APP_NAME: string;
-
-  @IsString()
   APP_PREFIX: string;
 
   @IsString()
