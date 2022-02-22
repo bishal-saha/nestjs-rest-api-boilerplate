@@ -23,11 +23,10 @@
     "typeAcquisition": {
       "include": ["jest"]
     },
-    "include": ["src/**/*", ".env"],
+    "include": ["src/**/*.ts", "test/**/*", "src/**/*.json", ".env"],
     "exclude": [
       "node_modules",
       "dist",
-      "**/*.spec.ts"
     ]
   }
 }
